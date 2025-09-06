@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Ranvir Kumar — Student developer portfolio. Responsive, accessible, and performance-minded." />
+
+  <!-- Preconnects & Fonts (performance-friendly) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  <title>Master11Ranvir</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Critical theme color for mobile UI -->
+  <meta name="theme-color" content="#071226">
+</head>
+<body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Simple accessible header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Ranvir <span>Kumar</span></a>
+
+      <div class="header-controls">
+        <button id="theme-toggle" class="icon-btn" aria-pressed="false" aria-label="Toggle light and dark theme">🌗</button>
+        <button id="nav-toggle" class="icon-btn" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">☰</button>
+      </div>
+
+      <nav id="primary-nav" class="primary-nav" role="navigation" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main id="main">
+
+    <!-- HERO -->
+    <section id="hero" class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1 id="hero-heading">Hello — I’m <strong class="emphasis">Ranvir Kumar</strong></h1>
+          <p class="lead">Student developer focused on clean UIs, fast performance and pragmatic engineering. HTML • CSS • JavaScript • Python • DSA</p>
+
+          <p class="hero-actions">
+            <a class="btn btn-primary" href="#projects">See projects</a>
+            <a class="btn btn-ghost" href="mailto:your.email@example.com">Hire me</a>
+            <a class="btn btn-outline" href="resume.pdf" download>Download CV</a>
+          </p>
+
+          <ul class="socials" aria-hidden="false">
+            <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/master-ranvir-316535276/" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <aside class="hero-aside" aria-hidden="false">
+          <!-- Image uses lazy loading with a low-res placeholder approach (replace with your own images) -->
+          <div class="profile">
+            <img src="hacker.png" alt="Portrait of Ranvir Kumar" loading="lazy" width="360" height="360">
+            <div class="profile-meta">
+              <h2>Ranvir Kumar</h2>
+              <p class="muted">Student • Web Developer</p>
+              <ul class="meta-list">
+                <li><strong>4+</strong><span>projects</span></li>
+                <li><strong>DSA</strong><span>enthusiast</span></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Decorative background (pure CSS) -->
+      <div class="hero-bg" aria-hidden="true">
+        <span class="blob b1"></span>
+        <span class="blob b2"></span>
+        <span class="blob b3"></span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container content-grid">
+        <div class="card">
+          <h3 id="about-heading">About</h3>
+          <p>I’m a student developer who builds thoughtful and accessible web interfaces. I enjoy solving problems, writing clean code, and learning system design and algorithms.</p>
+
+          <h4>Approach</h4>
+          <ol>
+            <li>Start with semantic markup and accessibility.</li>
+            <li>Prioritize performance — lazy load, minimize repaints.</li>
+            <li>Keep components small and well-tested.</li>
+          </ol>
+        </div>
+
+        <aside class="card quick-stats" aria-hidden="false">
+          <h4>Quick stats</h4>
+          <dl>
+            <dt>Projects</dt><dd>4 (live/demo)</dd>
+            <dt>Avg load</dt><dd>~100ms (demo builds)</dd>
+            <dt>Focus</dt><dd>Front‑end, Automation, DSA</dd>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt" aria-labelledby="skills-heading">
+      <div class="container">
+        <h3 id="skills-heading">Skills</h3>
+        <p class="muted">Tools and languages I use frequently.</p>
+        <ul class="skill-chips">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>C / C++</li><li>Data Structures & Algorithms</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <h3 id="projects-heading">Selected Projects</h3>
+        <p class="muted">Small, focused projects demonstrating problem solving and craftsmanship.</p>
+
+        <ul class="projects-list">
+          <li class="project-item">
+            <figure>
+              <img src="https://images.unsplash.com/photo-1523475496153-3d6cc6f2c7b5?q=80&w=800&auto=format&fit=crop&s=placeholder" alt="Portfolio project screenshot" loading="lazy">
+              <figcaption>
+                <h4>Portfolio Website</h4>
+                <p>Responsive portfolio built with semantic HTML, modular CSS and minimal JS.</p>
+                <p class="project-actions"><a class="link" href="https://github.com/yourusername/portfolio" target="_blank">View code</a> <button class="btn small" data-preview="portfolio">Preview</button></p>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="project-item">
+            <figure>
+              <img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?q=80&w=800&auto=format&fit=crop&s=placeholder" alt="PDF merger app screenshot" loading="lazy">
+              <figcaption>
+                <h4>PDF Merger (Python)</h4>
+                <p>Utility to merge PDF files — CLI + GUI proof of concept emphasizing reliability.</p>
+                <p class="project-actions"><a class="link" href="https://github.com/yourusername/pdf-merger" target="_blank">View code</a> <button class="btn small" data-preview="pdf-merger">Preview</button></p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+        <div class="card">
+          <h3 id="contact-heading">Get in touch</h3>
+          <p>If you want to collaborate or have a project idea — email me and we’ll talk.</p>
+          <p><a href="mailto:your.email@example.com" class="link">your.email@example.com</a></p>
+        </div>
+
+        <form class="card contact-form" action="mailto:your.email@example.com" method="post" enctype="text/plain" aria-label="Contact form">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <div class="form-row">
+            <button type="submit" class="btn btn-primary">Send</button>
+            <button type="reset" class="btn btn-outline">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <small>© 2025 Ranvir Kumar — Built with thoughtfulness and precision.</small>
+      <nav aria-label="Footer" class="footer-nav">
+        <a class="link" href="#">Privacy</a>
+        <a class="link" href="#">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Accessible modal used for quick previews -->
+  <div id="preview-modal" class="modal" role="dialog" aria-hidden="true" aria-labelledby="preview-title">
+    <div class="modal-panel">
+      <button id="modal-close" class="modal-close" aria-label="Close preview">✕</button>
+      <div id="preview-content" tabindex="0"></div>
+    </div>
+  </div>
+
+  <noscript>
+    <style>.reveal{opacity:1;transform:none}</style>
+    <div class="noscript-note">JavaScript is disabled — some interactivity is unavailable.</div>
+  </noscript>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
